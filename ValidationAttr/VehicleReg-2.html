@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Karnatak Vehicle Number Registration</title>
+    </head>
+    <body>
+        <h3>Online Registratin Form</h3>
+        <form action="/reg">
+            <div>
+                <label >Mobile No:</label>
+                <input type="text" 
+                       required 
+                       pattern="[6-9]\d{9}"
+                       title="Enter 10 Digit Mobile Number start from 6/7/8/9/" 
+                       placeholder="Enter Mobile Number"/>
+            </div>
+            <div>
+                <label >Vehicle No:</label>
+                <input type="text" 
+                       required
+                       pattern="^KA[0-9]{2}[a-zA-Z]{2}[0-9]{4}"
+                       title="Number-Prefix KA with RTO and Series and Number" 
+                       placeholder="Enter Vehicle Number"
+                />
+            </div>
+            <input type="submit">
+        </form>
+    </body>
+</html>
